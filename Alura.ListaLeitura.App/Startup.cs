@@ -89,7 +89,7 @@ namespace Alura.ListaLeitura.App
         public Task LivrosParaLer(HttpContext context)
         {
             var _repo = new LivroRepositorioCSV();
-            var conteudoArquivo = CarregaArquivoHTML("para-ler");
+            var conteudoArquivo = CarregaArquivoHTML("lista");
 
             foreach (var livro in _repo.ParaLer.Livros)
             {
@@ -103,7 +103,7 @@ namespace Alura.ListaLeitura.App
         public Task LivrosLendo(HttpContext context)
         {
             var _repo = new LivroRepositorioCSV();
-            var conteudoArquivo = CarregaArquivoHTML("lendo");
+            var conteudoArquivo = CarregaArquivoHTML("lista");
 
             foreach (var livro in _repo.Lendo.Livros)
             {
@@ -117,7 +117,7 @@ namespace Alura.ListaLeitura.App
         public Task LivrosLidos(HttpContext context)
         {
             var _repo = new LivroRepositorioCSV();
-            var conteudoArquivo = CarregaArquivoHTML("lidos");
+            var conteudoArquivo = CarregaArquivoHTML("lista");
 
             foreach (var livro in _repo.Lidos.Livros)
             {
