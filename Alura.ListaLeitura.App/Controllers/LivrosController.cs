@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
-namespace Alura.ListaLeitura.App.Logica
+namespace Alura.ListaLeitura.App.Controllers
 {
     public class LivrosController : Controller
     {

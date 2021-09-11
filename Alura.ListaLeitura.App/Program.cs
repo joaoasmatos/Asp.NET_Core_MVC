@@ -1,4 +1,4 @@
-﻿using Alura.ListaLeitura.App.Model;
+﻿using Alura.ListaLeitura.App.Models;
 using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Hosting;
 using System;

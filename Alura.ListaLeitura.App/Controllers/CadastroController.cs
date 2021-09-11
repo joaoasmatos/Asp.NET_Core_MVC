@@ -1,11 +1,11 @@
-﻿using Alura.ListaLeitura.App.Model;
+﻿using Alura.ListaLeitura.App.Models;
 using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Alura.ListaLeitura.App.Logica
+namespace Alura.ListaLeitura.App.Controllers
 {
     public class CadastroController
     {

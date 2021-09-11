@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Alura.ListaLeitura.App.Model;
+using Alura.ListaLeitura.App.Models;
 
 namespace Alura.ListaLeitura.App.Repositorio
 {

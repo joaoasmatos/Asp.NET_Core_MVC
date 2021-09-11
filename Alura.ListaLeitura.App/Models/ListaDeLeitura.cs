@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 
-namespace Alura.ListaLeitura.App.Model
+namespace Alura.ListaLeitura.App.Models
 {
     public class ListaDeLeitura
     {
