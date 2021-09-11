@@ -26,7 +26,7 @@ namespace Alura.ListaLeitura.App
             routeBuilder.MapRoute("Livros/Lendo", LivrosLendo);
             routeBuilder.MapRoute("Livros/Lidos", LivrosLidos);
             routeBuilder.MapRoute("Cadastro/NovoLivro/{nome}/{autor}", NovoLivroParaLer);
-            routeBuilder.MapRoute("Livros/Detalhes/{id}", ExibeDetalhes);
+            routeBuilder.MapRoute("Livros/Detalhes/{id:int}", ExibeDetalhes);
             var rotas = routeBuilder.Build();
 
             app.UseRouter(rotas);
