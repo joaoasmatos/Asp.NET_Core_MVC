@@ -34,8 +34,6 @@ namespace Alura.ListaLeitura.App
 
             app.UseRouter(rotas);
 
-            //app.Run(Roteamento);
-
         }
 
         private Task ProcessaFormulario(HttpContext context)
@@ -86,26 +84,6 @@ namespace Alura.ListaLeitura.App
             repo.Incluir(livro);
             return context.Response.WriteAsync("O livro foi adicionado com sucesso.");
 
-        }
-
-        public Task Roteamento(HttpContext context)
-        {
-            var _repo = new LivroRepositorioCSV();
-            var caminhosAtendidos = new Dictionary<string, RequestDelegate>
-            {
-                {"/Livros/ParaLer", LivrosParaLer },
-                {"/Livros/Lendo", LivrosLendo },
-                {"/Livros/Lidos", LivrosLidos }
-            };
-
-            if (caminhosAtendidos.ContainsKey(context.Request.Path))
-            {
-                var metodo = caminhosAtendidos[context.Request.Path];
-                return metodo.Invoke(context);
-            }
-
-            context.Response.StatusCode = 404;
-            return context.Response.WriteAsync("Página não encontrada.");
         }
 
         public Task LivrosParaLer(HttpContext context)
