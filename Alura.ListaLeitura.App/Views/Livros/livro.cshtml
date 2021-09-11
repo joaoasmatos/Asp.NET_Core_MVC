@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+
+    Alura.ListaLeitura.App.Models.Livro livro = (Alura.ListaLeitura.App.Models.Livro)ViewBag.Livro;
+}
+
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Livro</title>
+</head>
+<body>
+    <h2>Detalhes do Livro</h2>
+    <hr />
+    <dl>
+        <dt>Título:</dt>
+        <dt>@livro.Titulo</dt>
+        <dt>Autor:</dt>
+        <dt>@livro.Autor</dt>
+        <dt>Lista:</dt>
+        <dt>@livro.Lista.Titulo</dt>
+
+    </dl>
+    <button onclick="window.location.href='/Listas/Selecionar'">Voltar</button>
+</body>
+</html>

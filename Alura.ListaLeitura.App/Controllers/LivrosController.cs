@@ -6,11 +6,16 @@ namespace Alura.ListaLeitura.App.Controllers
 {
     public class LivrosController : Controller
     {
-        public string Detalhes(int id)
+        public IActionResult Detalhes(int id)
         {
+            //var repo = new LivroRepositorioCSV();
+            //var livro = repo.Todos.First(l => l.Id == id);
+            //return livro.Detalhes();
+
             var repo = new LivroRepositorioCSV();
             var livro = repo.Todos.First(l => l.Id == id);
-            return livro.Detalhes();
+            ViewBag.Livro = livro;
+            return View("livro");
         }
 
         public IActionResult ParaLer()

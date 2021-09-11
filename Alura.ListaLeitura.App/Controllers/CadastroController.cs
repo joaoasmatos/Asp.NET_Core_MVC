@@ -1,9 +1,6 @@
 ﻿using Alura.ListaLeitura.App.Models;
 using Alura.ListaLeitura.App.Repositorio;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App.Controllers
 {
