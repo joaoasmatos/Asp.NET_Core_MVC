@@ -9,19 +9,6 @@ namespace Alura.ListaLeitura.App.Controllers
 {
     public class CadastroController
     {
-        public static Task ProcessaFormulario(HttpContext context)
-        {
-            var livro = new Livro()
-            {
-                Titulo = context.Request.Form["titulo"].First(),
-                Autor = context.Request.Form["autor"].First(),
-            };
-
-            var repo = new LivroRepositorioCSV();
-            repo.Incluir(livro);
-            return context.Response.WriteAsync("O livro foi adicionado com sucesso.");
-        }
-
         public IActionResult Formulario()
         {
             var html = new ViewResult { ViewName = "formulario" };
