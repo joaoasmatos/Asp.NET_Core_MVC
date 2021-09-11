@@ -22,7 +22,7 @@ namespace Alura.ListaLeitura.App.Controllers
             return context.Response.WriteAsync("O livro foi adicionado com sucesso.");
         }
 
-        public IActionResult ExibeFormulario()
+        public IActionResult Formulario()
         {
             var html = new ViewResult { ViewName = "formulario" };
             return html;
