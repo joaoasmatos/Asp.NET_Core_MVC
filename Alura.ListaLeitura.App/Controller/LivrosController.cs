@@ -1,6 +1,4 @@
-﻿using Alura.ListaLeitura.App.HTML;
-using Alura.ListaLeitura.App.Repositorio;
-using Microsoft.AspNetCore.Http;
+﻿using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
