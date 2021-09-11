@@ -1,9 +1,7 @@
-﻿using Alura.ListaLeitura.App.HTML;
-using Alura.ListaLeitura.App.Negocio;
+﻿using Alura.ListaLeitura.App.Negocio;
 using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Linq;
 using System.Threading.Tasks;
 
