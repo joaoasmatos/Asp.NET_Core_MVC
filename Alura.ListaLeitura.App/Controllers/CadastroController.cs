@@ -28,12 +28,13 @@ namespace Alura.ListaLeitura.App.Controllers
             return html;
         }
 
-        public string Incluir(Livro livro)
+        public IActionResult Incluir(Livro livro)
         {
             var repo = new LivroRepositorioCSV();
             repo.Incluir(livro);
-            return "O livro foi adicionado com sucesso.";
 
+            var html = new ViewResult { ViewName = "sucesso" };
+            return html;
         }
     }
 }
