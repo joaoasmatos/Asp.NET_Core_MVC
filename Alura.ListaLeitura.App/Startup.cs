@@ -8,7 +8,6 @@ namespace Alura.ListaLeitura.App
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRouting();
             services.AddMvc();
         }
 
