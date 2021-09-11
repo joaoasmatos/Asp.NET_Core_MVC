@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App.Logica
 {
-    public class LivrosLogica
+    public class LivrosController
     {
         public static Task ExibeDetalhes(HttpContext context)
         {
@@ -58,6 +58,11 @@ namespace Alura.ListaLeitura.App.Logica
             }
             conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", "");
             return context.Response.WriteAsync(conteudoArquivo);
+        }
+
+        public string Teste()
+        {
+            return "Nova funcionalidade implementada.";
         }
     }
 }
