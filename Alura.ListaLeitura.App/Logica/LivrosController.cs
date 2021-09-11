@@ -1,8 +1,6 @@
 ﻿using Alura.ListaLeitura.App.HTML;
 using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
-using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -10,12 +8,11 @@ namespace Alura.ListaLeitura.App.Logica
 {
     public class LivrosController
     {
-        public static Task ExibeDetalhes(HttpContext context)
+        public string Detalhes(int id)
         {
-            int id = Convert.ToInt32(context.GetRouteValue("id"));
             var repo = new LivroRepositorioCSV();
             var livro = repo.Todos.First(l => l.Id == id);
-            return context.Response.WriteAsync(livro.Detalhes());
+            return livro.Detalhes();
         }
 
         public static Task LivrosParaLer(HttpContext context)
